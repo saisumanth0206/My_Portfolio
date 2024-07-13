@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/ilogo.png" ; />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Web Developer</p>
+          <h1>Hi, I'm <span>Sai Sumanth</span><br />Maicharla From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a graduate student specializing in machine learning and
+              full-stack web development. With a strong foundation in
+              statistical learning and extensive experience in building dynamic
+              web applications, I am passionate about leveraging technology to
+              solve complex problems and drive innovation.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Portfolio">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>Machine learning</span><br />Building Machine learning
+                  models
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 jul - Current</span><br />ML Intern at Internship
+                  Studio
+                </li>
+                <li>
+                  <span>2024 Mar - 2024 Jul</span><br />Trainee and Intern at
+                  Devtown.
+                </li>
+                <li>
+                  <span>2023 Nov - 2024 Jan</span><br />Salesforce Dveloper
+                  Intern.
+                </li>
+                <li>
+                  <span>2023 Aug - 2023 Nov</span><br />ML Trainee Intern at Fox
+                  Trading Solutions.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025 - expected</span><br />B.Tech graduation from KIET
+                  college
+                </li>
+                <li>
+                  <span>2021</span><br />Intermediate from Sri Chaitanya jr
+                  college
+                </li>
+                <li>
+                  <span>2019</span><br />Completed Schooling in KIDS E.M School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------portfolio---------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I also have a strong passion for web design, focusing on creating
+              intuitive and aesthetically pleasing user interfaces.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I am also skilled in UI/UX design, ensuring user-centric
+              interfaces that enhance usability and deliver a seamless
+              experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>Machine Learning</h2>
+            <p>
+              I specialize in machine learning, utilizing algorithms to extract
+              insights from data and drive informed decision-making.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------projects------------ -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Diabetes Prediction</h3>
+              <p>
+                A diabetes prediction model utilizes machine learning algorithms
+                to analyze various health indicators and predict the likelihood
+                of an individual developing diabetes in the future.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Bike Sharing Demand Prediction</h3>
+              <p>
+                A bike sharing demand prediction model employs data analytics to
+                forecast the usage of bicycles based on factors such as weather
+                conditions, time of day, and historical usage patterns.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Task Management Web Application</h3>
+              <p>
+                A task management web application facilitates organizing and
+                tracking tasks, projects, and deadlines collaboratively among
+                teams or individuals, enhancing productivity and workflow
+                efficiency.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">View profile</a>
+      </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              maicharlasaisumanth@gmail.com
+            </p>
+            <p><i class="fa-solid fa-tty"></i> +91 9666510511</p>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            <div class="social-icons">
+              <a href="https://github.com/saisumanth0206"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/saisumanth2106/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/vibepsychoo/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://discord.com/channels/@me"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Sai Sumanth Maicharla. Made wtih
+          <i class="fas fa-heart"></i> by
+          <a href="https://github.com/saisumanth0206">Github</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxgT4Ub-aJm18QtDXHsacy6MAuI3TKgILIj4N5BkjcI614Qmm_PbCdU9T4lWhS3VS2u/exec"; // add your own app script link here
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
